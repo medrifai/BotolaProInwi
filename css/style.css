@@ -1,0 +1,162 @@
+/* Start Variables */
+:root{
+    --main-color:rgb(162, 0, 255);
+    --transparent-color:rgba(235, 225, 240, 0.9);
+    --section-padding:100px;
+}
+/* End Variables */
+/* Start Global Rules */
+*{
+    --webkit-box-sizing:border-box;
+    --moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    ul{
+        list-style: none;
+    }
+    
+    body {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400; 
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        overflow-x: hidden;
+    }
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Small */
+    @media (min-width:768px){
+        .container{
+            width:750px;
+        }
+    }
+    /* Medium */
+    @media (min-width:992px){
+        .container{
+            width:970px;
+        }
+    }
+    /* Large */
+    @media (min-width:1200px){
+        .container{
+            width:1170px;
+        }
+    }
+    /* End Global Rules */
+/* Start header */
+.header{
+    display: flex;
+    background-color: var(--transparent-color);
+    padding: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+    padding-top: 12px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.login-signup{
+    padding-top: 7px;
+    padding-right: 35px;
+    margin-left: auto;
+}
+#login{
+    border: none;
+    background-color:var(--transparent-color);
+    cursor: pointer;
+    color: var(--main-color);
+}
+#signup{
+    margin-left: 25px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+/* End header */
+/* Start home */
+.home {
+    min-height: 100vh;
+    background-image: url(/ressources/imgs/pic_ancien_botola.png);
+    background-size: cover;
+    position: relative;
+}
+
+.home .text {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    color: black;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+
+.home .text .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 645px;
+    height: 150px;
+    background-color: rgb(235 225 240 / 70%);
+}
+
+.home .text .content {
+    max-width: 500px;
+    padding-left: 90px;
+    text-align: center;
+}
+
+.home .text .content h2 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.home .text .content p {
+    font-size: 16px;
+    line-height: 2;
+}
+.search{
+    position: relative;
+    margin-bottom: 20px;
+    bottom: -400px;
+    left: 25%;
+}
+.search input {
+    background-color:rgb(235 225 240 / 70%) ;
+    padding-left: 30px;
+    width: 648px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.search i {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* End home */
