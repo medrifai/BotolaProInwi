@@ -64,6 +64,7 @@ nav ul li{
     display: inline-block;
     margin-right: 25px;
     padding-top: 12px;
+    padding-left: 5px;
 }
 nav ul li a{
     text-decoration: none;
@@ -90,7 +91,7 @@ nav ul li a{
     cursor: pointer;
 }
 /* End header */
-/* Start home */
+/* Start home : Search */
 .home {
     min-height: 100vh;
     background-image: url(/ressources/imgs/pic_ancien_botola.png);
@@ -159,4 +160,121 @@ nav ul li a{
     top: 50%;
     transform: translateY(-50%);
 }
-/* End home */
+/* End home : Search */
+/* Start home : cards */
+.cards{
+    text-align: center;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.box img{
+    width: 300px;
+    height: 300px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    border: none;
+    border-radius: 50px;
+    background-color: var(--transparent-color);
+    padding-bottom: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.box:hover{
+    background-color: rgb(208, 227, 238);
+    transform: scale(1.1) translateY(-5px) rotate(1.5deg); 
+}
+.box h3{
+    text-align: center;
+    font-weight:normal
+}
+.more{
+    margin-top: 30px;
+    padding-top: 20px;
+}
+.more button{
+    border: none;
+    border-radius: 40px;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #D473D4;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.more button:hover {
+    color: #D473D4;
+    background-color: black;
+    font-weight: bold;
+    transform: translateY(-5px);
+}
+/* End home : cards */
+/* Start Footer */
+.footer{
+    background-color: var(--transparent-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.up-footer{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.footer .container{
+    display: flex;
+    flex-direction: column;
+}
+#title{
+    display: flex;
+}
+#title img{
+    width: auto;
+}
+#title p{
+    padding-left: 8px;
+    padding-top: 8px;
+}
+#License{
+    margin-left: auto;
+}
+#License ul{
+    display: flex;
+}
+/* #License ul li{
+    
+} */
+#License ul li a{
+    margin-left: 12px;
+    color: #000;
+    text-decoration: none;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+}
+#License ul li a:hover{
+    text-decoration: underline;
+}
+#barre{
+    width: 100%;
+    border: 0.1px solid #7777;
+}
+.down-footer{
+    display: flex;
+    padding-top: 20px;
+}
+#rs{
+    margin-left: auto;
+}
+#rs i{
+    padding-left: 5px;
+    cursor: pointer;
+}
+.footer p{
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+}
+/* End Footer */
