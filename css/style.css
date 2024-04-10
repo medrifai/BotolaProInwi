@@ -94,7 +94,7 @@ nav ul li a{
 /* Start home : Search */
 .home {
     min-height: 100vh;
-    background-image: url(/ressources/imgs/pic_ancien_botola.png);
+    background-image: url(../ressources/imgs/pic_ancien_botola.png);
     background-size: cover;
     position: relative;
 }
