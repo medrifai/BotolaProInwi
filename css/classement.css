@@ -150,32 +150,38 @@
 
 .rows{
     /* background-color: aqua; */
+    border-width: 0.1px;
     color: white;
     display: flex;
     align-items: center;
-    padding-bottom: 4px;
+    height: 43px;
+    margin-top: 5px;
+    border-radius: 100px;
 }
 .rows:nth-last-child(n+2) #barre-color {
     border-width: 20px;
-    border-color: yellow;
+    border-color: #6b0f6b;
     border-style: solid;
     box-sizing:border-box;
     padding: 0;
     margin: 0;
 }
+#barre-color{
+    z-index: -1;
+}
 .rows:nth-child(4) #barre-color {
-    border-color: gray; /* Modifier la couleur en gris */
+    border-color: #6b0f6b; /* Modifier la couleur en gris */
 }
 .rows:nth-last-child(-n+2) #barre-color{
     border-width: 20px;
-    border-color: red;
+    border-color: #6b0f6b;
     border-style: solid;
     box-sizing:border-box;
     padding: 0;
     margin: 0;
 }
 .rows:nth-child(n+5):nth-child(-n+15) #barre-color {
-    border-color: #6b0f6b;
+    border-color:#6b0f6b;
 }
 .rows:nth-last-child(-n+7) #num-classement{
     /* background-color:aquamarine; */
