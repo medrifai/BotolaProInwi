@@ -80,6 +80,11 @@ nav ul li a{
     background-color:var(--transparent-color);
     cursor: pointer;
     color: var(--main-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#login:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 #signup{
     margin-left: 25px;
@@ -89,6 +94,11 @@ nav ul li a{
     padding: 10px;
     border-radius: 12px;
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#signup:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 /* End header */
 /* Start home : Search */
@@ -120,25 +130,43 @@ nav ul li a{
     width: 645px;
     height: 150px;
     background-color: rgb(235 225 240 / 70%);
+    border-radius: 15px;
 }
 
 .home .text .content {
-    max-width: 500px;
-    padding-left: 90px;
+    /* max-width: 500px; */
+    max-height: 150px;
+    padding-right: 70px;
+    padding-left: 91px;
     text-align: center;
+    padding-top: 5px;
+    align-items: center;
+    margin-left: -10px;
+    /* background-color: #152b7a; */
 }
 
 .home .text .content h2 {
-    font-size: 30px;
-    font-weight: normal;
+    background: linear-gradient(to right,rgb(162, 0, 255) , #152b7a);
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    font-weight: bold;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
 .home .text .content p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 2;
+    font-weight: bolder;
 }
+/* .home .text .content h2,
+.home .text .content p{
+    text-align: center;
+    align-items: center;
+} */
 .search{
     position: relative;
     margin-bottom: 20px;
