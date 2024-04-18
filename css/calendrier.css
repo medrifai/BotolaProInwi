@@ -1,0 +1,108 @@
+:root{
+    --mauve:#D473D4;
+    --main-color:rgb(162, 0, 255);
+    --transparent-color:rgba(235, 225, 240, 0.9);
+    --section-padding:100px;
+}
+/* End Variables */
+/* Start Global Rules */
+*{
+    --webkit-box-sizing:border-box;
+    --moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    }
+    html{
+        scroll-behavior: smooth;
+        /* background-color:#6b0f6b; */
+    }
+    ul{
+        list-style: none;
+    }
+    
+    body {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400; 
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        overflow-x: hidden;
+    }
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Small */
+    @media (min-width:768px){
+        .container{
+            width:750px;
+        }
+    }
+    /* Medium */
+    @media (min-width:992px){
+        .container{
+            width:970px;
+        }
+    }
+    /* Large */
+    @media (min-width:1200px){
+        .container{
+            width:1170px;
+        }
+    }
+/* End Global Rules */
+/* Start header */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    background-color: var(--transparent-color);
+    padding: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+    padding-top: 12px;
+    padding-left: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.login-signup{
+    padding-top: 7px;
+    padding-right: 35px;
+    margin-left: auto;
+}
+#login{
+    border: none;
+    background-color:rgba(235, 225, 240);
+    cursor: pointer;
+    color: var(--main-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#login:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#signup{
+    margin-left: 25px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#signup:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* End header */

@@ -15,7 +15,6 @@
     }
     html{
         scroll-behavior: smooth;
-        background-color:#6b0f6b;
     }
     ul{
         list-style: none;
@@ -55,36 +54,78 @@
         }
     }
     /* End Global Rules */
+    /* Start header */
+.header{
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    background-color: var(--transparent-color);
+    padding: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+    padding-top: 12px;
+    padding-left: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.login-signup{
+    padding-top: 7px;
+    padding-right: 35px;
+    margin-left: auto;
+}
+#login{
+    border: none;
+    background-color:rgba(235, 225, 240,1);
+    cursor: pointer;
+    color: var(--main-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#login:hover{
+    background-color:rgba(235, 225, 240,1);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#signup{
+    margin-left: 25px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#signup:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* End header */
 /* Start div1 */
 .classement{
-    /* background-color: var(--mauve); */
+    background-color:#6b0f6b;
+    padding-top: 18px;
     position: relative;
     z-index: 0;
 }
 .div1{
     display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+    flex-direction:column;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
-.logo-botola{
-    background-color: white;
-    border-radius: 5px;
-    max-width: 100%;
-    position: absolute;
-    background-image: url(../ressources/imgs/BOTOLA\ PRO\ INWI\ البطولة\ الإحترافية\ إينوي.svg);
-    background-size: cover ;
-    background-position: center;
-    width: 35px;
-    height: 50px;
-    margin-left: 5px;
-    margin-top: 12px;
-}
+
 .title{
     /* background-color: aqua; */
     flex: 1;
     text-align: center;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     overflow: hidden;
 }
 .title h1{
@@ -100,11 +141,9 @@
     color: white;
 }
 .logo-frmf{
+
     /* background-color: blue; */
-    margin-left: auto;
-    padding-top: 10px;
-}
-.logo-frmf img{
+    padding-top: 6px;
     width: 50px;
     height: 50px;
 }
@@ -169,8 +208,11 @@
 #barre-color{
     z-index: -1;
 }
-.rows:nth-child(4) #barre-color {
+/* .rows:nth-child(4) #barre-color {
     border-color: #6b0f6b; /* Modifier la couleur en gris */
+
+.rows:nth-child(even){
+    background-color: #7777;
 }
 .rows:nth-last-child(-n+2) #barre-color{
     border-width: 20px;

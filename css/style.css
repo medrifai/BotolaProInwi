@@ -27,6 +27,7 @@
         font-style: normal;
         font-variation-settings: "wdth" 100;
         overflow-x: hidden;
+        margin-top: 68px;
     }
     .container{
         padding-left: 15px;
@@ -56,6 +57,10 @@
     /* End Global Rules */
 /* Start header */
 .header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
     display: flex;
     background-color: var(--transparent-color);
     padding: 10px;
@@ -103,10 +108,25 @@ nav ul li a{
 /* End header */
 /* Start home : Search */
 .home {
+    width: 100%;
+    /* height: 400px; */
     min-height: 100vh;
-    background-image:url(../ressources/imgs/pic_ancien_botola.png);
-    background-size: cover;
+    /* background-image:url(../ressources/imgs/pic_ancien_botola.png); */
+    /* background-size: cover; */
     position: relative;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../ressources/imgs/pic_ancien_botola.png'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-size: cover;
+    filter: blur(2.5px); /* Applique un flou à l'image d'arrière-plan */
+    z-index: -1; /* Placez l'image d'arrière-plan en dessous du contenu */
 }
 
 .home .text {
