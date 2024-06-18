@@ -2,9 +2,6 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db/connection');
 
-router.get('/',(req,res) => {
-    res.sendFile(__dirname + '../html/index.html');
-});
 
 router.get('/equipe',(req,res) => {
     db.query('SELECT * FROM equipe',(err,results) => {

@@ -141,145 +141,57 @@ nav ul li a{
     color: white;
 }
 .logo-frmf{
-
-    /* background-color: blue; */
     padding-top: 6px;
     width: 50px;
     height: 50px;
 }
 /* End div 1 */
-
+/* Start classementTable */
+#classementTable thead tr th{
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+tbody{
+    color: white;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+#classementTable th, #classementTable td{
+    background-color: transparent;
+}
+#classementTable tbody tr td:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#classementTable tbody tr td:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#classementTable tbody tr:nth-child(odd) {
+    background-color: #7777;
+}
+.team-badge {
+    width: 40px;
+    height: 40px;
+}
+.div2 .team_name{
+    width: 45%;
+}
+/* End classementTable */
 /* Start div 2 Tableau de classement des équipes */
 .div2{
     margin-top: 15px;
 }
-.row0{
-    /* background-color: aliceblue; */
-    color: white;
-    display: flex;
-    max-width: 512px;
-    margin-left: auto;
-    margin-top: 35px;
-}
-/* .column0 {
-    background-color: rgb(0, 255, 13); 
-    */
-.column1{
-    margin-left: 72px;
-    /* background-color: blue; */
-}
-.column2{
-    margin-left: 80px;
-    /* background-color: rgb(0, 255, 13); */
-}
-.column3{    
-    margin-left: 82px;
-    /* background-color: blue; */
-}
 
-.column4{
-    margin-left: 80px;
-    /* background-color: rgb(0, 255, 13); */
-}
-.column5{
-    margin-left: auto;
-    color: yellow;
-    /* background-color: blue; */
-}
 
-.rows{
-    /* background-color: aqua; */
-    border-width: 0.1px;
-    color: white;
-    display: flex;
-    align-items: center;
-    height: 43px;
-    margin-top: 5px;
-    border-radius: 100px;
-}
-.rows:nth-last-child(n+2) #barre-color {
-    border-width: 20px;
-    border-color: #6b0f6b;
-    border-style: solid;
-    box-sizing:border-box;
-    padding: 0;
-    margin: 0;
-}
-#barre-color{
-    z-index: -1;
-}
-/* .rows:nth-child(4) #barre-color {
-    border-color: #6b0f6b; /* Modifier la couleur en gris */
-
-.rows:nth-child(even){
-    background-color: #7777;
-}
-.rows:nth-last-child(-n+2) #barre-color{
-    border-width: 20px;
-    border-color: #6b0f6b;
-    border-style: solid;
-    box-sizing:border-box;
-    padding: 0;
-    margin: 0;
-}
-.rows:nth-child(n+5):nth-child(-n+15) #barre-color {
-    border-color:#6b0f6b;
-}
-.rows:nth-last-child(-n+7) #num-classement{
-    /* background-color:aquamarine; */
-    margin-left: 26px;
-}
-#num-classement{
-    /* background-color: cadetblue; */
-    margin-left: 30px;
-}
-.rows:nth-last-child(-n+7) #joué{
-    margin-left: 191px ;
-}
-#club-name {
-    /* background-color: aqua; */
-    min-width: 280px;
-    align-items: center;
-    /* text-align: center; */
-    margin-left: 30px;
-}
-#joué{
-    margin-left: 180px;
-}
-#win{
-    margin-left:80px;
-}
-#draw{
-    margin-left: 82px;
-}
-#lose{
-    margin-left: 82px;
-}
-#buts{
-    margin-left: 82px;
-}
-#points{
-    margin-left: 82px;
-    color: yellow;
-}
-.rows:nth-last-child(-n+7) #club-name{
-    min-width: 270px;
-}
-
-#img-club{
-    margin-top: 5px;
-    margin-left: 30px;
-}
-.rows:nth-last-child(-n+7) #img-club{
-    margin-left: 22px;
-}
-#img-club img{
-    width: 32px;
-    height: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-height: 40px;
-}
 /* End div 2 Tableau de classement des équipes*/
 .footer{
     background-color: var(--transparent-color);
