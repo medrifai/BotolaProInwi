@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../ressources/imgs/bg-login-page.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    filter: blur(3px); 
+    z-index: -1; 
+}
+.head{
+    display: flex;
+    margin-left: 160px;
+}
+.logo-img img{
+    width: 34px;
+    height: 50px;
+    margin-top: 30px;
+}
+.title{
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.title h3{
+    font-size: 20px;
+    color: rgb(15, 13, 90);
+}
+.form{
+    margin-top: 60px;
+    display: flex;
+}
+.formulaire{
+    position: relative;
+    margin-left: 230px;
+    display: flex;
+    flex-direction: column;
+}
+.formulaire h2{
+    color: white;
+    margin-bottom: -10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.formulaire h2 span{
+    color: rgb(15, 13, 90);
+}
+.formulaire h4{
+    color: #333e4b;
+    font-size: 14px;
+}
+.formulaire h4 a{
+    color: rgb(15, 13, 90);
+    cursor: pointer;
+    text-decoration: none;
+}
+.formulaire h4 a:hover{
+    text-decoration: underline;
+}
+.formulaire input{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border-bottom-color: white;
+    border-bottom-width: 2.5px;
+    padding: 10px 10px 3px 30px;
+    outline: none;
+}
+.input-container {
+    position: relative;
+    margin: 0px 0; 
+}
+.input-container i {
+    position: absolute;
+    top: 32%;
+    left: 5px;
+    transform: translateY(-50%);
+    color:rgb(15, 13, 90) ;
+}
+.formulaire input::placeholder{
+    color: rgb(15, 13, 90);
+}
+#botola_span{
+    color: rgb(8, 218, 8);
+}
+#maroc_span{
+    color: rgb(209, 23, 23);
+}
+.checkbox-container label{
+    color: #333e4b;
+}
+.checkbox-container label a{
+    text-decoration: none;
+    color: rgb(15, 13, 90);
+    font-weight: bolder;
+    font-size: 14px;
+}
+.checkbox-container label a:hover{
+    text-decoration: underline;
+}
+.formulaire button{
+    display: block;
+    background-color: transparent;
+    border-radius: 20px;
+    width: calc(100%-20px);
+    color: white;
+    border: 2px solid rgb(15, 13, 90);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.formulaire button:hover{
+    background-color: rgb(120, 93, 131);
+    border: none;
+}
+.desc{
+    /* background-color: blueviolet; */
+    width: 25%;
+    margin-left: 250px;
+}
+.desc p{
+    color: aliceblue;
+    padding-top: 10%;
+    padding-left: 10px;
+    line-height: 2;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.desc p span{
+    color: rgb(15, 13, 90);
+}
+
