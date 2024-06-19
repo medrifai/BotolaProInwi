@@ -1,6 +1,16 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     fetchClassement();
+    const signupButton = document.getElementById('signup');
+    const loginButton = document.getElementById('login');
+    signupButton.addEventListener('click',function(event){
+        event.preventDefault();
+        window.location.href = 'signup.html';
+    });
+    loginButton.addEventListener('click',function(event){
+        event.preventDefault();
+        window.location.href = 'login.html';
+    });
 });
 
 function fetchClassement() {
@@ -15,7 +25,7 @@ function fetchClassement() {
     })
     .then(data => {
         const tbody = document.querySelector('#classementTable tbody');
-        tbody.innerHTML = ''; // Clear existing rows
+        tbody.innerHTML = ''; 
 
         data.forEach(team => {
             const row = document.createElement('tr');
@@ -37,5 +47,3 @@ function fetchClassement() {
     })
     .catch(error => console.error('Error fetching data:', error));
 }
-
-const rows = document.querySelectorAll('');

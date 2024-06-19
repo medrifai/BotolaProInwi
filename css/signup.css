@@ -38,7 +38,7 @@ body::before {
     color: rgb(15, 13, 90);
 }
 .form{
-    margin-top: 95px;
+    margin-top: 60px;
     display: flex;
 }
 .formulaire{
@@ -136,6 +136,8 @@ body::before {
 }
 .desc p{
     color: aliceblue;
+    padding-top: 10%;
+    padding-left: 10px;
     line-height: 2;
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
