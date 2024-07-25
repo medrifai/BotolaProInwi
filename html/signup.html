@@ -11,7 +11,7 @@
     <link rel="icon" href="../ressources/imgs/BOTOLA PRO INWI البطولة الإحترافية إينوي.svg">
     <link rel="stylesheet" href="../css/signup.css">
     <title>BotolaPro | Sign up</title>
-    <script src="../main.js"></script>
+    <script src="../js/signup.js"></script>
 </head>
 <body>
     <div class="content">
@@ -29,21 +29,21 @@
                 <h4>Already A Member ? <a href="login.html">Log in</a></h4>
                 <div class="input-container">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username">
+                    <input id="username" type="text" placeholder="Username">
                 </div>
                 <div class="input-container">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Email address">
+                    <input id="emailAdresse" type="email" placeholder="Email address">
                 </div>
                 <div class="input-container">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password">
+                    <input id="password" type="password" placeholder="Password">
                 </div>
                 <div class="checkbox-container">
                     <input type="checkbox" id="terms">
                     <label for="terms">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a> </label>
                 </div>
-                <button>Create an account</button>
+                <button id="createAccountButton">Create an account</button>
             </div>
             <div class="desc">
                 <p>Login to stay updated with the latest <span id="botola_span">Botola </span><span id="maroc_span">Maroc </span>news and match results. Follow your favorite teams and players <span>closely.</span></p>

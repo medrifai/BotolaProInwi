@@ -11,7 +11,7 @@
     <link rel="icon" href="../ressources/imgs/BOTOLA PRO INWI البطولة الإحترافية إينوي.svg">
     <link rel="stylesheet" href="../css/login.css">
     <title>BotolaPro | Log in</title>
-    <script src="../main.js"></script>
+    <script src="../js/login.js"></script>
 </head>
 <body>
     <div class="content">
@@ -29,17 +29,17 @@
                 <h4>Not yet a member ? <a href="signup.html">Sign up</a></h4>
                 <div class="input-container">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Email address">
+                    <input id="emailAdresse" type="email" placeholder="Email address">
                 </div>
                 <div class="input-container">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password">
+                    <input id="password" type="password" placeholder="Password">
                 </div>
                 <div class="checkbox-container">
                     <input type="checkbox" id="terms">
                     <label for="terms">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a> </label>
                 </div>
-                <button>Log in my account</button>
+                <button id="loginButton" >Log in my account</button>
             </div>
             <div class="desc">
                 <p>Welcome to <span id="botola_span">Botola</span> Pro <span id="maroc_span">Maroc </span>! Explore our platform and stay updated with the latest news, match schedules, and updates. <span>Log in to access</span>  exclusive content and engage with your favorite teams and players.</p>

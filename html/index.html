@@ -11,33 +11,42 @@
     <title>Botola Pro Inwi</title>
     <link rel="icon" href="../ressources/imgs/BOTOLA PRO INWI البطولة الإحترافية إينوي.svg">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../main.js"></script>
+    <script src="../js/home.js"></script>
 </head>
 <body>
 <!-- Start header -->
-    <header>
-        <div class="header">
-            <div class="logo">
-                <img src="../ressources/imgs/BOTOLA PRO INWI البطولة الإحترافية إينوي.svg" alt="#" width="100px" height="45px">
+<header>
+    <div class="header">
+        <div class="logo">
+            <img src="../ressources/imgs/BOTOLA PRO INWI البطولة الإحترافية إينوي.svg" alt="#" width="100px" height="45px">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><i class="fa-solid fa-house"></i><a href="index.html"> Home</a></li>
+                <li id="calendrierMenuItem"><i class="fa-solid fa-calendar-days"></i><a href="calendrier.html"> Calendrier</a></li>
+                <li id="classementMenuItem"><i class="fa-solid fa-ranking-star"></i><a href="classement.html"> Classement</a></li>
+                <li><i class="fa-solid fa-address-book"></i><a href="contact.html"> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="login-signup" id="guestButtons">
+            <button id="login">Login</button>
+            <button id="signup">Sign up</button>
+        </div>
+        <div id="userPanel" style="display:none;">
+            <div class="imageUser">
+                <img id="userPhoto" src="" alt="User Photo" style="width:40px; height:40px;">
             </div>
-            <nav class="navbar">
-                <ul>
-                    <i class="fa-solid fa-house"></i>
-                    <li><a href="index.html">Home</a></li>
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <li><a href="calendrier.html">Calendrier</a></li>
-                    <i class="fa-solid fa-ranking-star"></i>
-                    <li><a href="classement.html">Classement</a></li>
-                    <i class="fa-solid fa-address-card"></i>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <div class="login-signup">
-                <button id="login">Login</button>
-                <button id="signup">Sign up</button>
+            <div id="enfantUserPanel">
+                <p id="userName"></p>
+                <p id="email"></p>
+                <p id="userCountry"></p>
+            </div>
+            <div class="buttonLogOut">                                              
+                <button id="logout">Log Out</button>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 <!-- End header -->
 <!-- Start home : Search -->
 <div class="home">
@@ -49,6 +58,33 @@
             </div>
         </div>
     </div>
+    <div id="userFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="userForm">
+                <label for="firstname">First name:</label>
+                <input type="text" id="formFirstname" name="firstname">
+                <br>
+                <label for="lastname">Last name:</label>
+                <input type="text" id="formLastname" name="lastname">
+                <br>
+                <label for="date">Date of birth:</label>
+                <input type="date" id="formDateOfBirth" name="date">
+                <br>
+                <label for="country">Country:</label>
+                <input type="text" id="formCountry" name="country">
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="formPhone" name="phone">
+                <br>
+                <label for="photo">Photo:</label>
+                <input type="file" id="formPhoto" name="photo">
+                <br>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+    
     <div class="search">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" placeholder="Search for your best club ...">

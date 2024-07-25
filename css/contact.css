@@ -1,0 +1,314 @@
+/* Start Variables */
+:root{
+    --main-color:rgb(162, 0, 255);
+    --transparent-color:rgba(235, 225, 240, 0.9);
+    --section-padding:100px;
+}
+/* End Variables */
+/* Start Global Rules */
+*{
+    --webkit-box-sizing:border-box;
+    --moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    ul{
+        list-style: none;
+    }
+    
+    body {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400; 
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        overflow-x: hidden;
+        margin-top: 68px;
+    }
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Small */
+    @media (min-width:768px){
+        .container{
+            width:750px;
+        }
+    }
+    /* Medium */
+    @media (min-width:992px){
+        .container{
+            width:970px;
+        }
+    }
+    /* Large */
+    @media (min-width:1200px){
+        .container{
+            width:1170px;
+        }
+    }
+    /* End Global Rules */
+/* Start header */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    background-color: var(--transparent-color);
+    padding: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+    padding-top: 12px;
+    padding-left: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.login-signup{
+    padding-top: 7px;
+    padding-right: 35px;
+    margin-left: auto;
+}
+#login{
+    border: none;
+    background-color:var(--transparent-color);
+    cursor: pointer;
+    color: var(--main-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#login:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#signup{
+    margin-left: 25px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#signup:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* End header */
+/* Start Formulaire */
+.form{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.formulaire .top-formulaire{
+    text-align: center;
+    padding-top: 40px;
+}
+.formulaire h2{
+    font-size: 36px;
+    font-family:'Times New Roman', Times, serif;
+}
+.formulaire h4{
+    margin-top: 12px;
+    margin-bottom: 38px;
+}
+.main-formulaire{
+    background-color: var(--transparent-color);
+    margin-left: 145px;
+    margin-right: 140px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 38px;
+    border-radius: 18px;
+}
+.name input ,.age input{
+    padding-left: 8px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    margin-bottom: 45px;
+}
+#last_name,#city{
+    margin-left: 95px;
+}
+.email input{
+    padding-left: 8px;
+    width: 598px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    margin-bottom: 45px;
+}
+.floating-label {
+    position: absolute;
+    left: 8px;
+    top: 18%;
+    transform: translateY(-50%);
+    transition: 0.2s ease all;
+    pointer-events: none;
+    color: #aaa;
+}
+.tell-us input{
+    padding-left: 8px;
+    width: 598px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+}
+.submit-formulaire{
+    margin-top: 45px;
+}
+.comment-formulaire{
+    margin-bottom: 25px;
+}
+.comment-formulaire h5{
+    font-weight:normal;
+}
+.send button{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: var(--main-color);
+    color: aliceblue;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-left: 250px;
+    font-weight:600;
+}
+/* End Formulaire */
+/* Start people div */
+.people{
+    display: flex;
+}
+.head-of-div{
+    text-align: center;
+    margin-top: 100px;
+}
+.head-of-div h5{
+    font-weight: 700;
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.head-of-div h3{
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.head-of-div p{
+    color: #777;
+    line-height: 1.7;
+}
+.box{
+    margin-top: 60px;
+    width: 300px;
+}
+.box img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.box h5{
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+.box h3{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.box p{
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #777;
+}
+.infos{
+    margin-left: 300px;
+    margin-top: 100px;
+}
+.infos i{
+    margin-bottom: 35px;
+    margin-right: 12px;
+}   
+/* End people div */
+/* Start Footer */
+.footer{
+    background-color: var(--transparent-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.up-footer{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.footer .container{
+    display: flex;
+    flex-direction: column;
+}
+#title{
+    display: flex;
+}
+#title img{
+    width: auto;
+}
+#title p{
+    padding-left: 8px;
+    padding-top: 8px;
+}
+#License{
+    margin-left: auto;
+}
+#License ul{
+    display: flex;
+}
+#License ul li a{
+    margin-left: 12px;
+    color: #000;
+    text-decoration: none;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+}
+#License ul li a:hover{
+    text-decoration: underline;
+}
+#barre{
+    width: 100%;
+    border: 0.1px solid #7777;
+}
+.down-footer{
+    display: flex;
+    padding-top: 20px;
+}
+#rs{
+    margin-left: auto;
+}
+#rs i{
+    padding-left: 5px;
+    cursor: pointer;
+}
+.footer p{
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+}
+/* End Footer */
